@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+html, body {
+  overflow: hidden;
+}
+
+.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  height: 130vh;
+  position: fixed;
+  width: 100%;
+  -webkit-transform: translateY(30vh);
+          transform: translateY(30vh);
+  -webkit-transition: all 1s cubic-bezier(0,.91,.3,.97);
+  transition: all 1s cubic-bezier(0,.91,.3,.97);
+}
+.background:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.background:first-child {
+  background-image: url(https://s8.postimg.org/lf2udl5np/4_Aihmii.jpg);
+  -webkit-transform: translateY(-55vh);
+          transform: translateY(-55vh);
+}
+.background:first-child .content-wrapper {
+  -webkit-transform: translateY(15vh);
+          transform: translateY(15vh);
+}
+.background:nth-child(2) {
+  background-image: url(https://s8.postimg.org/ow4wgk4px/ugqti_Lg.jpg);
+}
+.background:nth-child(3) {
+  background-image: url(https://s8.postimg.org/grwsbtiat/x_ZMOBTj.jpg);
+}
+
+/* Set stacking context of slides */
+.background:nth-child(1) {
+  z-index: 3;
+}
+
+.background:nth-child(2) {
+  z-index: 2;
+}
+
+.background:nth-child(3) {
+  z-index: 1;
+}
+
+.content-wrapper {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  color: #fff;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  -webkit-transform: translateY(40vh);
+          transform: translateY(40vh);
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: all 0.7s cubic-bezier(0.22, 0.44, 0, 1);
+  transition: all 0.7s cubic-bezier(0.22, 0.44, 0, 1);
+}
+.content-title {
+  font-size: 12vh;
+  line-height: 1.4;
+}
+
+.background.up-scroll {
+  -webkit-transform: translate3d(0, -15vh, 0);
+          transform: translate3d(0, -15vh, 0);
+}
+.background.up-scroll .content-wrapper {
+  -webkit-transform: translateY(15vh);
+          transform: translateY(15vh);
+}
+.background.up-scroll + .background {
+  -webkit-transform: translate3d(0, 30vh, 0);
+          transform: translate3d(0, 30vh, 0);
+}
+.background.up-scroll + .background .content-wrapper {
+  -webkit-transform: translateY(30vh);
+          transform: translateY(30vh);
+}
+
+.background.down-scroll {
+  -webkit-transform: translate3d(0, -130vh, 0);
+          transform: translate3d(0, -130vh, 0);
+}
+.background.down-scroll .content-wrapper {
+  -webkit-transform: translateY(40vh);
+          transform: translateY(40vh);
+}
+.background.down-scroll + .background:not(.down-scroll) {
+  -webkit-transform: translate3d(0, -15vh, 0);
+          transform: translate3d(0, -15vh, 0);
+}
+.background.down-scroll + .background:not(.down-scroll) .content-wrapper {
+  -webkit-transform: translateY(15vh);
+          transform: translateY(15vh);
+}
