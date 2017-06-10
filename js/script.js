@@ -1,4 +1,4 @@
-// ------------- VARIABLES ------------- //
+// VARIABLES 
 var ticking = false;
 var isFirefox = (/Firefox/i.test(navigator.userAgent));
 var isIe = (/MSIE/i.test(navigator.userAgent)) || (/Trident.*rv\:11\./i.test(navigator.userAgent));
@@ -8,7 +8,7 @@ var currentSlideNumber = 0;
 var totalSlideNumber = $(".background").length;
 var dots = $(".dot").length;
 
-// ------------- DETERMINE DELTA/SCROLL DIRECTION ------------- //
+//DETERMINE DELTA/SCROLL DIRECTION 
 function parallaxScroll(evt) {
   if (isFirefox) {
     //Set delta for Firefox
@@ -45,18 +45,18 @@ function parallaxScroll(evt) {
   }
 }
 
-// ------------- SET TIMEOUT TO TEMPORARILY "LOCK" SLIDES ------------- //
+
 function slideDurationTimeout(slideDuration) {
   setTimeout(function() {
     ticking = false;
   }, slideDuration);
 }
 
-// ------------- ADD EVENT LISTENER ------------- //
+//EVENT LISTENER
 var mousewheelEvent = isFirefox ? "mousewheel" : "wheel";
 window.addEventListener(mousewheelEvent, _.throttle(parallaxScroll, 60), false);
 
-// ------------- SLIDE MOTION ------------- //
+// SLIDE MOTION 
 function nextItem() {
   var $nextSlide = $(".background").eq(currentSlideNumber);
   var $next2Slide = $(".background").eq(currentSlideNumber+1);

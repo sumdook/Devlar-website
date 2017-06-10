@@ -5,10 +5,19 @@
     font-family: Theinhardt-Medium;
     src: url('../fonts/Theinhardt-Medium.otf');
 }
+
+@font-face {
+    font-family: dincond-bold;
+    src: url('../fonts/dincond-bold.otf');
+}
+
+
 @font-face {
     font-family: Theinhardt-Bold;
     src: url('../fonts/Theinhardt-Bold.otf');
 }
+
+
 *{
   font-family: Theinhardt-Medium;
 }
@@ -25,6 +34,9 @@ html, body {
 .navbar-brand:hover{
   color: 
 }
+#logo{
+  height:40px;
+}
 
 .navbar-brand ,.nav li a{
   font-family: Theinhardt-Bold ;
@@ -32,6 +44,7 @@ color: #5c5c5c;
   }
 
   .background {
+    color: #5c5c5c;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -78,22 +91,23 @@ color: #5c5c5c;
 
 /* Set stacking context of slides */
 .background:nth-child(1) {
-  background-color: #242424;
+  background-color: #dcdbd7;
   z-index: 1;
 }
 
 .background:nth-child(2) {
-  background-color: #c3dae8;
+  background-color: #242424;
   z-index: 2;
 }
 
 .background:nth-child(3) {
-  background-color: #dcdbd7;
+  background-color: #b2cede;
   z-index: 3;
 }
 .background:nth-child(4) {
   z-index: 4;
-}
+  background-color: #0e0e0e;
+}b2e5bd
 
 
 .content-wrapper {
@@ -115,13 +129,139 @@ color: #5c5c5c;
   will-change: transform;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transition: all 1s cubic-bezier(0,.91,.3,.97);
-  transition: all 1s cubic-bezier(0,.91,.3,.97);
+  -webkit-transition: all 1s cubic-bezier(.15,.83,.96,.98);
+  transition: all 1s cubic-bezier(.15,.83,.96,.98);
 }
+
+
+/*Slide 1 content*/
 .content-title {
-  font-size: 12vh;
-  line-height: 1.4;
+  font-size: 6vh;
 }
+.content-info{
+  font-size: 3vh;
+}
+
+#ct1, #ci1{
+  position: fixed;
+  top: 10%;
+  left: 50%;
+}
+#ci1{
+  top:17%;
+}
+#img1{
+  position: fixed;
+  height: 350px;
+  left: 41%;
+  top: 30%;
+}
+
+#circle1 {
+  position: fixed;
+  top: 25%;
+  left: 5%;
+  width: 150px;
+  height: 150px;
+  background: #424242;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+}
+#circle2 {
+  position: fixed;
+  top: 55%;
+  left:25%;
+  width: 150px;
+  height: 150px;
+  background: #ef5843;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+}
+#circle3 {
+  position: fixed;
+  top: 25%;
+  left: 100%;
+  width: 150px;
+  height: 150px;
+  transform: translate(-50%, 0);
+  background: #f6c431;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+}
+
+/*Slide 2 content*/
+
+#ci2-wrapper{
+  font-size: 4vh;
+  position: fixed;
+  width: 400px;
+  left: 10%;
+  top: 50%;
+
+}
+
+#ci2s{
+color: #9c9c9c;
+font-size: 4.1vh;
+}
+
+/*3rd slide content*/
+
+#drill-wrapper{
+  font-size: 3vh;
+  position: fixed;
+  width:400px;
+  left: 63%;
+  top: 44%;
+}
+
+#drill-info{
+  font-size: 2.8vh;
+}
+
+#drills{
+color: white;
+font-size: 4vh;
+}
+
+#drill{
+  position: fixed;
+  right:33%;
+  top:5vh;
+  height: 750px;
+}
+
+/*Slide 3 content*/
+
+
+#cs-wrapper{
+  font-size: 3vh;
+  position: fixed;
+  width:870px;
+  left: 80%;
+  top: 74%;
+}
+
+#cs-info{
+  font-size: 2.8vh;
+}
+
+#css{
+color: white;
+font-size: 4vh;
+}
+
+#cs{
+  position: fixed;
+  right: 0;
+  top:18vh;
+  height: 500px;
+}
+
+
 
 
 
