@@ -105,7 +105,7 @@ html, body {
 }
 .background:nth-child(4) {
   z-index: 4;
-  background-color: #0e0e0e;
+  background-color: #fff;
 }
 .background:nth-child(5) {
   z-index: 5;
@@ -114,14 +114,8 @@ html, body {
 
 .background:nth-child(6) {
   z-index: 6;
-  background-color: #0e0e0e;
-}
-.background:nth-child(7) {
-  z-index: 7;
-  background-color: white;
-}
-b2e5bd
-
+  background-color: #fff;
+}b2e5bd
 
 .content-wrapper {
   height: 100vh;
@@ -154,6 +148,9 @@ b2e5bd
   text-decoration: none;
   color: #1e76ff;
 }
+.links-dark, .links-dark > a{
+  color: #7087ab;
+}
 
 
 .slide-info{
@@ -162,7 +159,16 @@ b2e5bd
   top: 30vh;
   font-size: 20px;
   color: white;
-   -webkit-transform: rotate(90deg); 
+   -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.slide-info-dark {
+  position: fixed;
+  right:5vh;
+  top: 30vh;
+  font-size: 20px;
+  color: #556681;
+   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
@@ -282,11 +288,28 @@ font-size: 4vh;
 
 /*Slide 4 content*/
 
-#cs {
+#vulneyes {
+  color: #40e0d0;
+  font-size: 4vh;
+}
+#vulneye-info{
+  color: #a6bcc9;
+  font-size: 2.8vh;
+}
+#vulneye {
   position: fixed;
-  top: 20vh;
+  top: 25vh;
   left: 45%;
   height: 500px;
+}
+
+/*Slide 5 content*/
+
+#cs {
+  position: fixed;
+  top: 23vh;
+  left: 45%;
+  height: 450px;
 }
 #css {
   color: white;
