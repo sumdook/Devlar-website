@@ -14,7 +14,6 @@
     src: url('../fonts/Theinhardt-Bold.otf');
 }
 
-
 *{
   font-family: dincond-bold;
 }
@@ -34,16 +33,15 @@ html, body {
 .navbar-brand{
   font-family: dincond-bold;
   font-size: 25px;
-  padding-right:20px;
+  padding-right: 20px;
 }
 .navbar-brand:hover{
   color: #1e76ff
 }
 #logo{
-  height:40px;
+  height: 40px;
 }
 .navbar-brand ,.nav li a {
-  font-family: Theinhardt-Bold ;
   color: #7087ab;
 }
 
@@ -94,7 +92,7 @@ html, body {
 
 /* Set stacking context of slides */
 .background:nth-child(1) {
-  background-color: #f5f9ff;
+  background-color: #d4dbe5;
   z-index: 1;
 }
 .background:nth-child(2) {
@@ -226,7 +224,7 @@ b2e5bd
   left:25%;
   width: 150px;
   height: 150px;
-  background: #ef5843;
+  background: #1e76ff;
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
   border-radius: 100px;
@@ -238,7 +236,7 @@ b2e5bd
   width: 150px;
   height: 150px;
   transform: translate(-50%, 0);
-  background: #f6c431;
+  background: #7087AB;
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
   border-radius: 100px;
