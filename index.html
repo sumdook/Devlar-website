@@ -17,7 +17,11 @@
     <!-- Fullpage CSS -->
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- Fullpage Script -->
+	<!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Real Shadow Script -->
+    <script src="js/realshadow.js" type="text/javascript"></script>
 
     <!-- Custom Script -->
 
@@ -41,8 +45,8 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">About</a></li>
+					<li><a href="#" class="disabled">Blog</a></li>
+					<li><a href="#">Contact Us</a></li>
 				</ul>
 			</div>
 		</div>
@@ -109,10 +113,22 @@
 				<div id="ci2-wrapper">
 					<span id="vulneyes">Vulneye</span>
 					<p id="vulneye-info">Vulneye works for you and your projects by continuously finding vulnerabilities and issues in your dependencies.</p>
-					<span class="links links-dark"><a target="_blank" href="https://www.behance.net/gallery/53454019/Vulneye-UIUX-Design-and-Branding">Behance</a></span>
+					<span class="links links-dark"><a target="_blank" href="https://www.behance.net/gallery/53454019/Vulneye-UIUX-Design-and-Branding">Behance</a> · <a target="_blank" href="https://vulneye.com">Vulneye.com</a></span>
 				</div>
 				<div class="content-wrapper">
 					<img id="vulneye" src="img/vulneye.png">
+				</div>
+			</section>
+
+			<section class="background">
+			<p class="slide-info-dark">projects</p>
+				<div id="drill-wrapper">
+					<span id="pentests">Pentest Cloud <span style="color: #B2D8D4">(Contribution)</span></span>
+					<p id="drill-info">A community where users share a timeline of events which helped them learn a topic of their choice.</p>
+					<span class="links links-dark"><a target="_blank" href="https://www.behance.net/gallery/47988037/UIUX-Branding-Pentest-Cloud">Behance</a></span>
+				</div>
+				<div class="content-wrapper">
+					<img id="pentest" src="img/pentest.png">
 				</div>
 			</section>
 
@@ -139,15 +155,21 @@
     </div>
     <!-- /.container -->
 
-    <!-- jQuery Version 1.11.1 -->
-    <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Other JavaScript -->
     <script src="js/underscore.js"></script>
     <script src="js/script.js"></script>
+
+    <script type="text/javascript">
+    	$('#circle1').realshadow();
+    	$('#circle2').realshadow();
+    	$('#circle3').realshadow();
+    	$('#img1').realshadow({
+    		type: 'drop',
+    	});
+    </script>
 
 </body>
 

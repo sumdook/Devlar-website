@@ -58,7 +58,7 @@ window.addEventListener(mousewheelEvent, _.throttle(parallaxScroll, 60), false);
 
 // SLIDE MOTION 
 function nextItem() {
-  if(currentSlideNumber==5){
+  if(currentSlideNumber==6){
     var $slide = $(".background").eq(currentSlideNumber);
     console.log("thanks");
     $slide.removeClass("down-scrolltwo").addClass("last-down-scroll ");

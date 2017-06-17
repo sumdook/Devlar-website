@@ -92,7 +92,7 @@ html, body {
 
 /* Set stacking context of slides */
 .background:nth-child(1) {
-  background-color: #d4dbe5;
+  background-color: #ecf1f8;
   z-index: 1;
 }
 .background:nth-child(2) {
@@ -109,10 +109,13 @@ html, body {
 }
 .background:nth-child(5) {
   z-index: 5;
+  background-color: #dff7f4;
+}
+.background:nth-child(6) {
+  z-index: 5;
   background-color: #0e0e0e;
 }
-
-.background:nth-child(6) {
+.background:nth-child(7) {
   z-index: 6;
   background-color: #fff;
 }b2e5bd
@@ -298,12 +301,25 @@ font-size: 4vh;
 }
 #vulneye {
   position: fixed;
-  top: 25vh;
-  left: 45%;
+  top: 22vh;
+  left: 42%;
   height: 500px;
 }
 
 /*Slide 5 content*/
+
+#pentests {
+  color: #00a99c;
+  font-size: 4vh;
+}
+#pentest {
+  position: fixed;
+  right:50%;
+  top:25vh;
+  height: 500px;
+}
+
+/*Slide 6 content*/
 
 #cs {
   position: fixed;
