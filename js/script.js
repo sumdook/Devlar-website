@@ -62,8 +62,8 @@ function nextItem() {
     var $slide = $(".background").eq(currentSlideNumber);
     console.log("thanks");
     $slide.removeClass("down-scrolltwo").addClass("last-down-scroll ");
-    $('.dot-container').css('top','27vh');
-    $('.scroll-inst').css('top','28vh');
+    $('.dot-container').css('top','14vh');
+    $('.scroll-inst').css('top','15vh');
   }
   else{
   var $nextSlide = $(".background").eq(currentSlideNumber);

@@ -336,6 +336,19 @@ font-size: 4vh;
   font-size: 2.8vh;
 }
 
+/*Team Slide content*/
+.team-container {
+  margin-top: 60px;
+}
+.team-container p.h1 {
+  color: #556681
+}
+.avatar {
+  height: 100%;
+}
+.fa {
+  color: #1e76ff
+}
 
 
 .background.up-scroll {
@@ -367,8 +380,8 @@ font-size: 4vh;
 }
 
 .background.last-down-scroll {
-  -webkit-transform: translate3d(0, 22vh, 0);
-          transform: translate3d(0, 22vh, 0);
+  -webkit-transform: translate3d(0, 10vh, 0);
+          transform: translate3d(0, 10vh, 0);
 }
 
 /*Scroll Instruction*/
