@@ -1,24 +1,23 @@
 @font-face {
-    font-family: Theinhardt-Medium;
-    src: url('../fonts/Theinhardt-Medium.otf');
-}
-
-@font-face {
     font-family: dincond-bold;
     src: url('../fonts/dincond-bold.otf');
 }
 
-
-@font-face {
-    font-family: Theinhardt-Bold;
-    src: url('../fonts/Theinhardt-Bold.otf');
-}
 
 *{
   font-family: dincond-bold;
 }
 html, body {
   overflow: hidden;
+}
+
+img{
+user-drag: none; 
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
 }
 .icon-bar {
   background: #556681;
@@ -350,6 +349,14 @@ font-size: 4vh;
   color: #1e76ff
 }
 
+.contact-us{
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  top: 75vh;
+  font-size: 15px;
+  transform: translate(-50%, 0);
+}
 
 .background.up-scroll {
   -webkit-transform: translate3d(0, 82vh, 0);
@@ -447,7 +454,7 @@ font-size: 4vh;
   border-radius: 50%;
   background-color: #5c5c5c;
   background-color: #5c5c5c;
-  text-indent: -999em; /* make the text accessible to screen readers */
+  text-indent: -999em; 
   cursor: pointer;
   position: absolute;
 }

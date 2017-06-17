@@ -37,7 +37,6 @@ function parallaxScroll(evt) {
       ticking = true;
       if (currentSlideNumber !== 0) {
         currentSlideNumber--;
-        console.log(delta);
       }
       previousItem();
       slideDurationTimeout(slideDurationSetting);
@@ -60,7 +59,6 @@ window.addEventListener(mousewheelEvent, _.throttle(parallaxScroll, 60), false);
 function nextItem() {
   if(currentSlideNumber==6){
     var $slide = $(".background").eq(currentSlideNumber);
-    console.log("thanks");
     $slide.removeClass("down-scrolltwo").addClass("last-down-scroll ");
     $('.dot-container').css('top','14vh');
     $('.scroll-inst').css('top','15vh');
@@ -77,7 +75,6 @@ function nextItem() {
   $currentDot.addClass("current");
   }
 
-  console.log(currentSlideNumber);
 }
 
 function previousItem() {
