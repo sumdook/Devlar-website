@@ -37,12 +37,14 @@ function parallaxScroll(evt) {
       ticking = true;
       if (currentSlideNumber !== 0) {
         currentSlideNumber--;
+        previousItem();
       }
-      previousItem();
+      
       slideDurationTimeout(slideDurationSetting);
     }
   }
 }
+
 
 
 function slideDurationTimeout(slideDuration) {
@@ -99,3 +101,63 @@ function reset(){
     }
 
 }
+
+$('.dot').on('click', function(e){
+    e.preventDefault();
+    myFunction($('.dot').index(this));
+});
+
+
+function myFunction(id) {
+  if(id>currentSlideNumber)
+  {
+    n = id-currentSlideNumber;
+    for(var i=0;i<n;i++){
+      currentSlideNumber++;
+        nextItem();
+      }
+    }
+    else{
+      n = currentSlideNumber - id + 1;
+      for(i=1;i<n;i++){
+        currentSlideNumber--;
+        previousItem();
+      }
+   } 
+}
+
+document.onkeydown = checkKey;
+
+function checkKey(e) {
+
+    e = e || window.event;
+
+    if (e.keyCode == '38' && currentSlideNumber!=0) {
+        currentSlideNumber--;
+        previousItem();
+    }
+    else if (e.keyCode == '40' && currentSlideNumber!=6) {
+        currentSlideNumber++;
+        nextItem();
+    }
+
+}
+
+ $(function() {      
+      //Enable swiping...
+      $("section").swipe( {
+        //Generic swipe handler for all directions
+        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+         if(direction == "up" && currentSlideNumber!=6) {
+          currentSlideNumber++;
+          nextItem();
+         }
+         else if(direction == "down" && currentSlideNumber!=0){
+          currentSlideNumber--;
+          previousItem();
+         }
+        },
+        //Default is 75px, set to 0 for demo so any distance triggers swipe
+         threshold:10
+      });
+    });
