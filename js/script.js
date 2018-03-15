@@ -7,6 +7,7 @@ var slideDurationSetting = 600;
 var currentSlideNumber = 0;
 var totalSlideNumber = $(".background").length;
 var dots = $(".dot").length;
+$('.brand-text').hide();
 
 //DETERMINE DELTA/SCROLL DIRECTION 
 function parallaxScroll(evt) {
@@ -43,6 +44,10 @@ function parallaxScroll(evt) {
       slideDurationTimeout(slideDurationSetting);
     }
   }
+  if (currentSlideNumber == 0) {
+    $('.brand-text').hide();
+  }
+  else $('.brand-text').show();
 }
 
 
@@ -99,6 +104,10 @@ function reset(){
       $(".dot").eq(0).addClass("current");
       currentSlideNumber = 0; 
     }
+    if (currentSlideNumber == 0) {
+      $('.brand-text').hide();
+    }
+    else $('.brand-text').show();
 
 }
 
@@ -124,6 +133,10 @@ function myFunction(id) {
         previousItem();
       }
    } 
+   if (currentSlideNumber == 0) {
+    $('.brand-text').hide();
+    }
+    else $('.brand-text').show();
 }
 
 document.onkeydown = checkKey;
@@ -140,6 +153,10 @@ function checkKey(e) {
         currentSlideNumber++;
         nextItem();
     }
+    if (currentSlideNumber == 0) {
+      $('.brand-text').hide();
+    }
+    else $('.brand-text').show();
 
 }
 
@@ -156,6 +173,10 @@ function checkKey(e) {
           currentSlideNumber--;
           previousItem();
          }
+         if (currentSlideNumber == 0) {
+          $('.brand-text').hide();
+        }
+        else $('.brand-text').show();
         },
         //Default is 75px, set to 0 for demo so any distance triggers swipe
          threshold:10
